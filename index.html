@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <titel>Hazem</titel>
+        <meta name="discription" content="My Ars in albohari">
+
+        <style>
+            img {
+                width: 100px;
+                height :120;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <i><h1>Hazem Hazam Alomari</h1></i>
+        </center>
+        
+        
+        <form action=" " method="post">
+            <!--
+            method="Get" تظهر البيانات علئ الرابط 
+            method="post" لاتضهر البيانات علئ الرابط
+            -->
+            <div>
+                <lable>Username</lable>
+                <!--name من اجل الارسال تعرف كل نص تبع من-->
+                <input type="text"
+                 required placeholder="Username" 
+                 name="User" 
+                 placeholder="Hazem@gmail.com">
+                 <!--value="Hazem" readonly-->
+                
+                <!--readonly تبعث بيانات ولا يمكن التعديل عليها--> 
+            </div>
+            <div>
+                <lable>Password</lable>
+                <input 
+                type="password" 
+                required
+                 placeholder="Password" 
+                 name="password" 
+                 minlength="8" 
+                 maxlength="20" 
+                 autofocus>
+                <!--اقل قيمه واعلئ قيمه الحد المسموح-->
+                <!--autofocus اول ماتفتح الصفحه يشير الموشر الئ هناك-->
+            </div>
+            <div>
+                <lable>Email</lable>
+                <input 
+                type="email" 
+                required placeholder="Hazem@gmail.com"
+                 name="email" 
+                  
+                 >
+                 <!--value="Hazem"-->
+                 <!--disabled-->
+                <!--disabled لاتعث بيانات ولا ينكن التعديل عليهاء-->
+            </div>
+            <div>
+                <label>Color</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <label>Range</label>
+                <input 
+                type="range" 
+                name="range" 
+                min="0" 
+                max="100" 
+                step="20">
+            </div>
+            <div>
+                <lable>Number</lable>
+                <input 
+                type="number"
+                name="number"
+                min="0"
+                max="100"
+                step="10">
+            </div>
+            <hr>
+            <div>
+                <label for="Hir">Hirdate : </label>
+                <input id="Hir" type="date">
+            </div>
+            <div>
+                <hr>
+               <label for="Year">سنة التخرج : </label>
+               <select>
+                <!--
+                <optgroup>
+                    يمكن عمل مجموعات او اجزاء
+                </optgroup>
+                -->
+                <optgroup lable="Year">
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+                <option value="">2024</option>
+            </optgroup>
+               </select>
+            </div>
+            <hr>
+            <div>
+                <!--id من اجل تضغط علئ الكلمة ويقبل ولاكن مدري ليش 3:13-->
+                <!--يمكنك اختيار شي وحيد -->
+              <input id="win1" type="radio" name="os" value="windows" checked>
+              <lable for="win1">Windows</lable>
+            </div>
+    
+            <div>
+                <input id="li1" type="radio" name="os" value="Linux"  >
+                <lable for="li1">Linux</lable>
+            </div>
+    
+            <div>
+                <input id="mac1" type="radio"  name="os" value="mac">
+                <lable for="mac1">Mac</lable>
+              </div>
+              <hr>
+            
+              <div>
+                <!--id من اجل تضغط علئ الكلمة ويقبل ولاكن مدري ليش 3:15-->
+                <!--يمكنك اختيار اكثر من شي -->
+              <input id="win2" type="checkbox" name="os" value="windows" checked>
+              <lable for="win2">Windows</lable>
+            </div>
+    
+            <div>
+                <input id="li2" type="checkbox" name="os" value="Linux"  >
+                <lable for="li2">Linux</lable>
+            </div>
+    
+            <div>
+                <input id="mac2" type="checkbox" name="os" value="mac">
+                <lable for="mac2">Mac</lable>
+              </div>
+              <hr>
+
+            <!--من اجل حفظ او ارسال البيانات -->
+            <input type="submit" value="Save">
+            <!--من اجل التصفير علئ الكل-->
+            <input type="reset" value ="Reset">
+            <hr>
+            <!--<textarea name="subject" cols="50" rows="10" placeholder="Test Text"></tetxarea>-->
+        </form>
+        
+        <hr>
+</body>
+</html>
